@@ -18,5 +18,13 @@ reponse = input("3) Quel mot-clé crée une boucle en Python ? ")
 if reponse.lower() == "for":
     score += 1
 
+reponse = input("4) Comment convertit-on une chaîne en entier en Python ? ")
+if reponse.lower() in ["int()", "int"]:
+    print("✅ Correct !")
+    score += 1
+else:
+    print("❌ Non, on utilise int().")
+
+
 # 5) Affichage du résultat
 print(f"Ton score est {score} sur 3.")
